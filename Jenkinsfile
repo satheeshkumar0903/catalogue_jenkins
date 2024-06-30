@@ -34,13 +34,13 @@ pipeline {
                 }
             }
         }
-        stage('Debugging') {
-            steps {
-                sh """
-                    echo"runninggggg"
-                """
-            }
-        }
+        // stage('Debugging') {
+        //     steps {
+        //         sh """
+        //             echo"runninggggg"
+        //         """
+        //     }
+        // }
         stage('Install dependencies') {
             steps {
                 sh """
