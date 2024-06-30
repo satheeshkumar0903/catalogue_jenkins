@@ -34,6 +34,13 @@ pipeline {
                 }
             }
         }
+        stage('Debugging') {
+            steps {
+                sh """
+                    echo"runninggggg"
+                """
+            }
+        }
         stage('Install dependencies') {
             steps {
                 sh """
@@ -41,6 +48,7 @@ pipeline {
                 """
             }
         }
+
         stage('Unit tests') {
             steps {
                 sh """
